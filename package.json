@@ -1,0 +1,19 @@
+{
+  "name": "arbipathshala",
+  "version": "0.0.1",
+  "description": "আরবী ভাষার পাঠশালা",
+  "main": "index.js",
+  "authors": {
+    "name": "Mashuqur Rahman",
+    "email": "mashuq@gmail.com"
+  },
+  "repository": "https://github.com/mashuq/arbipathshala/",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  }
+}
