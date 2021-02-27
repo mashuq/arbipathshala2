@@ -30,15 +30,58 @@ module.exports = {
       name: 'apple-mobile-web-app-status-bar-style',
       content: 'black'
     }],
-    ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "/assets/apple-touch-icon.png"}],
-    ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/assets/favicon-32x32.png"}],
-    ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "/assets/favicon-16x16.png"}],
-    ['link', { rel: "manifest", href: "/assets/favicons/site.webmanifest"}],
-    ['link', { rel: "mask-icon", href: "/assets/favicons/safari-pinned-tab.svg", color: "#3a0839"}],
-    ['link', { rel: "shortcut icon", href: "/assets/favicon.ico"}],
-    ['meta', { name: "msapplication-TileColor", content: "#3a0839"}],
-    ['meta', { name: "msapplication-config", content: "/assets/favicons/browserconfig.xml"}],
-    ['meta', { name: "theme-color", content: "#ffffff"}],
+    ['link', {
+      rel: "apple-touch-icon",
+      sizes: "180x180",
+      href: "/assets/apple-touch-icon.png"
+    }],
+    ['link', {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      href: "/assets/favicon-32x32.png"
+    }],
+    ['link', {
+      rel: "icon",
+      type: "image/png",
+      sizes: "16x16",
+      href: "/assets/favicon-16x16.png"
+    }],
+    ['link', {
+      rel: "manifest",
+      href: "/assets/favicons/site.webmanifest"
+    }],
+    ['link', {
+      rel: "mask-icon",
+      href: "/assets/favicons/safari-pinned-tab.svg",
+      color: "#3a0839"
+    }],
+    ['link', {
+      rel: "shortcut icon",
+      href: "/assets/favicon.ico"
+    }],
+    ['meta', {
+      name: "msapplication-TileColor",
+      content: "#3a0839"
+    }],
+    ['meta', {
+      name: "msapplication-config",
+      content: "/assets/favicons/browserconfig.xml"
+    }],
+    ['meta', {
+      name: "theme-color",
+      content: "#ffffff"
+    }],
+    ['script', {
+      async: true,
+      src: 'https://www.googletagmanager.com/gtag/js?id=G-L13KY2F273'
+    }],
+    ['script', {}, `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L13KY2F273');
+  `],
   ],
 
   /**
@@ -64,24 +107,21 @@ module.exports = {
         path: '/guide/nahw/',
         collapsable: true,
         initialOpenGroupIndex: 0,
-        children: [
-        ]
+        children: []
       },
       {
         title: 'الصَّرْف সরফ',
         path: '/guide/sarf/',
         collapsable: true,
         initialOpenGroupIndex: 0,
-        children: [
-        ]
+        children: []
       },
       {
         title: 'البَلَاغَة‎ বালাগাত',
         path: '/guide/balagah/',
         collapsable: true,
         initialOpenGroupIndex: 0,
-        children: [
-        ]
+        children: []
       },
     ]
   },
