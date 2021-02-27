@@ -1,10 +1,12 @@
-const { description } = require('../../package')
+const {
+  description
+} = require('../../package')
 
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: 'আরবী পাঠশালা',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -16,9 +18,27 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ['meta', {
+      name: 'theme-color',
+      content: '#3eaf7c'
+    }],
+    ['meta', {
+      name: 'apple-mobile-web-app-capable',
+      content: 'yes'
+    }],
+    ['meta', {
+      name: 'apple-mobile-web-app-status-bar-style',
+      content: 'black'
+    }],
+    ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "/assets/apple-touch-icon.png"}],
+    ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/assets/favicon-32x32.png"}],
+    ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "/assets/favicon-16x16.png"}],
+    ['link', { rel: "manifest", href: "/assets/favicons/site.webmanifest"}],
+    ['link', { rel: "mask-icon", href: "/assets/favicons/safari-pinned-tab.svg", color: "#3a0839"}],
+    ['link', { rel: "shortcut icon", href: "/assets/favicon.ico"}],
+    ['meta', { name: "msapplication-TileColor", content: "#3a0839"}],
+    ['meta', { name: "msapplication-config", content: "/assets/favicons/browserconfig.xml"}],
+    ['meta', { name: "theme-color", content: "#ffffff"}],
   ],
 
   /**
@@ -32,32 +52,38 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
+    nextLinks: false,
+    prevLinks: false,
     nav: [
-      {
-        text: 'Guide',
-        link: '/guide/',
-      },
-      {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
-      }
+
     ],
-    sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
-    }
+    sidebar: [
+      '/guide/',
+      {
+        title: 'النَّحْو নাহু',
+        path: '/guide/nahw/',
+        collapsable: true,
+        initialOpenGroupIndex: 0,
+        children: [
+        ]
+      },
+      {
+        title: 'الصَّرْف সরফ',
+        path: '/guide/sarf/',
+        collapsable: true,
+        initialOpenGroupIndex: 0,
+        children: [
+        ]
+      },
+      {
+        title: 'البَلَاغَة‎ বালাগাত',
+        path: '/guide/balagah/',
+        collapsable: true,
+        initialOpenGroupIndex: 0,
+        children: [
+        ]
+      },
+    ]
   },
 
   /**

@@ -1,15 +1,15 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
-tagline: আরবী ভাষার পাঠশালা
-actionText: Quick Start →
+heroImage: https://cdn.arbipathshala.com/hero.png
+tagline: বাংলায় আরবী শেখার আসর
+actionText: শুরু করুন →
 actionLink: /guide/
 features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
+- title: নাহু
+  details: আরবী ভাষার ব্যাকরণ
+- title: সরফ
+  details: আরবী শব্দতত্ব
+- title: বালাগাহ
+  details: আরবী অলঙ্কারশাস্ত্র
 footer: Made by Mashuqur Rahman with ❤️
 ---
