@@ -132,5 +132,54 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'caution',
+        defaultTitle: 'সতর্কতা',
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'suggestion',
+        defaultTitle: 'পরামর্শ',
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'easydef',
+        defaultTitle: 'সহজ সংজ্ঞা',
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'harddef',
+        defaultTitle: 'পুঁথিগত সংজ্ঞা',
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'example',
+        defaultTitle: 'উদাহরণ',
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'rule',
+        defaultTitle: 'নিয়ম',
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'info',
+        defaultTitle: 'তথ্য',
+      },
+    ],
   ]
 }
