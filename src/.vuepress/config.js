@@ -107,7 +107,9 @@ module.exports = {
         path: '/guide/nahw/',
         collapsable: true,
         initialOpenGroupIndex: 0,
-        children: []
+        children: [
+          '/guide/nahw/kalimah'
+        ]
       },
       {
         title: 'الصَّرْف সরফ',
@@ -163,8 +165,15 @@ module.exports = {
     [
       'vuepress-plugin-container',
       {
-        type: 'example',
-        defaultTitle: 'উদাহরণ',
+        type: 'quranic_example',
+        defaultTitle: 'কুরআন থেকে উদাহরণ',
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'modern_example',
+        defaultTitle: 'আধুনিক উদাহরণ',
       },
     ],
     [
