@@ -107,7 +107,9 @@ module.exports = {
         path: '/guide/nahw/',
         collapsable: true,
         initialOpenGroupIndex: 0,
-        children: []
+        children: [
+          '/guide/nahw/kalimah'
+        ]
       },
       {
         title: 'الصَّرْف সরফ',
@@ -132,5 +134,61 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'caution',
+        defaultTitle: 'সতর্কতা',
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'suggestion',
+        defaultTitle: 'পরামর্শ',
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'easydef',
+        defaultTitle: 'সহজ সংজ্ঞা',
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'harddef',
+        defaultTitle: 'পুঁথিগত সংজ্ঞা',
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'quranic_example',
+        defaultTitle: 'কুরআন থেকে উদাহরণ',
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'modern_example',
+        defaultTitle: 'আধুনিক উদাহরণ',
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'rule',
+        defaultTitle: 'নিয়ম',
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'info',
+        defaultTitle: 'তথ্য',
+      },
+    ],
   ]
 }
