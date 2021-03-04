@@ -6,7 +6,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'আরবী পাঠশালা',
+  title: "আরবী পাঠশালা",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -18,70 +18,113 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', {
-      name: 'theme-color',
-      content: '#3eaf7c'
-    }],
-    ['meta', {
-      name: 'apple-mobile-web-app-capable',
-      content: 'yes'
-    }],
-    ['meta', {
-      name: 'apple-mobile-web-app-status-bar-style',
-      content: 'black'
-    }],
-    ['link', {
-      rel: "apple-touch-icon",
-      sizes: "180x180",
-      href: "/assets/apple-touch-icon.png"
-    }],
-    ['link', {
-      rel: "icon",
-      type: "image/png",
-      sizes: "32x32",
-      href: "/assets/favicon-32x32.png"
-    }],
-    ['link', {
-      rel: "icon",
-      type: "image/png",
-      sizes: "16x16",
-      href: "/assets/favicon-16x16.png"
-    }],
-    ['link', {
-      rel: "manifest",
-      href: "/assets/favicons/site.webmanifest"
-    }],
-    ['link', {
-      rel: "mask-icon",
-      href: "/assets/favicons/safari-pinned-tab.svg",
-      color: "#3a0839"
-    }],
-    ['link', {
-      rel: "shortcut icon",
-      href: "/assets/favicon.ico"
-    }],
-    ['meta', {
-      name: "msapplication-TileColor",
-      content: "#3a0839"
-    }],
-    ['meta', {
-      name: "msapplication-config",
-      content: "/assets/favicons/browserconfig.xml"
-    }],
-    ['meta', {
-      name: "theme-color",
-      content: "#ffffff"
-    }],
-    ['script', {
-      async: true,
-      src: 'https://www.googletagmanager.com/gtag/js?id=G-L13KY2F273'
-    }],
-    ['script', {}, `
+    [
+      "meta",
+      {
+        name: "theme-color",
+        content: "#3eaf7c",
+      },
+    ],
+    [
+      "meta",
+      {
+        name: "apple-mobile-web-app-capable",
+        content: "yes",
+      },
+    ],
+    [
+      "meta",
+      {
+        name: "apple-mobile-web-app-status-bar-style",
+        content: "black",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "apple-touch-icon",
+        sizes: "180x180",
+        href: "/assets/apple-touch-icon.png",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        href: "/assets/favicon-32x32.png",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "16x16",
+        href: "/assets/favicon-16x16.png",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "manifest",
+        href: "/assets/favicons/site.webmanifest",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "mask-icon",
+        href: "/assets/favicons/safari-pinned-tab.svg",
+        color: "#3a0839",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "shortcut icon",
+        href: "/assets/favicon.ico",
+      },
+    ],
+    [
+      "meta",
+      {
+        name: "msapplication-TileColor",
+        content: "#3a0839",
+      },
+    ],
+    [
+      "meta",
+      {
+        name: "msapplication-config",
+        content: "/assets/favicons/browserconfig.xml",
+      },
+    ],
+    [
+      "meta",
+      {
+        name: "theme-color",
+        content: "#ffffff",
+      },
+    ],
+    [
+      "script",
+      {
+        async: true,
+        src: "https://www.googletagmanager.com/gtag/js?id=G-L13KY2F273",
+      },
+    ],
+    [
+      "script",
+      {},
+      `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-L13KY2F273');
-  `],
+  `,
+    ],
   ],
 
   /**
@@ -90,105 +133,115 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
+    repo: "",
     editLinks: false,
-    docsDir: '',
-    editLinkText: '',
+    docsDir: "",
+    editLinkText: "",
     lastUpdated: false,
     nextLinks: false,
     prevLinks: false,
-    nav: [
-
-    ],
+    nav: [],
     sidebar: [
-      '/guide/',
+      "/guide/",
       {
-        title: 'النَّحْو নাহু',
-        path: '/guide/nahw/',
+        title: "النَّحْو নাহু",
+        path: "/guide/nahw/",
         collapsable: true,
         initialOpenGroupIndex: 0,
         children: [
-          '/guide/nahw/kalimah'
-        ]
+          {
+            title: "كَلِمَة কালিমাহ (শব্দ)",
+            collapsable: false,
+            path: "/guide/nahw/kalimah",
+            children: ["/guide/nahw/ism", "/guide/nahw/fel", "/guide/nahw/harf"],
+          },
+        ],
       },
       {
-        title: 'الصَّرْف সরফ',
-        path: '/guide/sarf/',
+        title: "الصَّرْف সরফ",
+        path: "/guide/sarf/",
         collapsable: true,
         initialOpenGroupIndex: 0,
-        children: []
+        children: [],
       },
       {
-        title: 'البَلَاغَة‎ বালাগাত',
-        path: '/guide/balagah/',
+        title: "البَلَاغَة‎ বালাগাত",
+        path: "/guide/balagah/",
         collapsable: true,
         initialOpenGroupIndex: 0,
-        children: []
+        children: [],
       },
-    ]
+    ],
   },
 
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
   plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
+    "@vuepress/plugin-back-to-top",
+    "@vuepress/plugin-medium-zoom",
     [
-      'vuepress-plugin-container',
+      "vuepress-plugin-container",
       {
-        type: 'caution',
-        defaultTitle: 'সতর্কতা',
+        type: "caution",
+        defaultTitle: "সতর্কতা",
       },
     ],
     [
-      'vuepress-plugin-container',
+      "vuepress-plugin-container",
       {
-        type: 'suggestion',
-        defaultTitle: 'পরামর্শ',
+        type: "suggestion",
+        defaultTitle: "পরামর্শ",
       },
     ],
     [
-      'vuepress-plugin-container',
+      "vuepress-plugin-container",
       {
-        type: 'easydef',
-        defaultTitle: 'সহজ সংজ্ঞা',
+        type: "easydef",
+        defaultTitle: "সহজ সংজ্ঞা",
       },
     ],
     [
-      'vuepress-plugin-container',
+      "vuepress-plugin-container",
       {
-        type: 'harddef',
-        defaultTitle: 'পুঁথিগত সংজ্ঞা',
+        type: "harddef",
+        defaultTitle: "পুঁথিগত সংজ্ঞা",
       },
     ],
     [
-      'vuepress-plugin-container',
+      "vuepress-plugin-container",
       {
-        type: 'quranic_example',
-        defaultTitle: 'কুরআন থেকে উদাহরণ',
+        type: "quranic_example",
+        defaultTitle: "কুরআন থেকে উদাহরণ",
       },
     ],
     [
-      'vuepress-plugin-container',
+      "vuepress-plugin-container",
       {
-        type: 'modern_example',
-        defaultTitle: 'আধুনিক উদাহরণ',
+        type: "modern_example",
+        defaultTitle: "আধুনিক উদাহরণ",
       },
     ],
     [
-      'vuepress-plugin-container',
+      "vuepress-plugin-container",
       {
-        type: 'rule',
-        defaultTitle: 'নিয়ম',
+        type: "common_example",
+        defaultTitle: "উদাহরণ",
       },
     ],
     [
-      'vuepress-plugin-container',
+      "vuepress-plugin-container",
       {
-        type: 'info',
-        defaultTitle: 'তথ্য',
+        type: "rule",
+        defaultTitle: "নিয়ম",
       },
     ],
-  ]
-}
+    [
+      "vuepress-plugin-container",
+      {
+        type: "info",
+        defaultTitle: "তথ্য",
+      },
+    ],
+  ],
+};
