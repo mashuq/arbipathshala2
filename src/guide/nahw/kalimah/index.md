@@ -22,9 +22,9 @@
 
 আরবী শব্দ ৩ প্রকার:
 
-1. [اسْم ইসম](/guide/nahw/ism)
-2. [فِعْل ফেয়ল](/guide/nahw/fel)
-3. [حَرْف হারফ](/guide/nahw/harf)
+1. [اسْم ইসম](/guide/nahw/kalimah/ism/)
+2. [فِعْل ফেয়ল](/guide/nahw/kalimah/fel)
+3. [حَرْف হারফ](/guide/nahw/kalimah/harf)
 
 ::: quranic_example
 |আরবী|বাংলা|

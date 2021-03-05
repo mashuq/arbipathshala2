@@ -152,8 +152,8 @@ module.exports = {
           {
             title: "كَلِمَة কালিমাহ (শব্দ)",
             collapsable: false,
-            path: "/guide/nahw/kalimah",
-            children: ["/guide/nahw/ism", "/guide/nahw/fel", "/guide/nahw/harf"],
+            path: "/guide/nahw/kalimah/",
+            children: ["/guide/nahw/kalimah/ism/", "/guide/nahw/kalimah/fel/", "/guide/nahw/kalimah/harf/"],
           },
         ],
       },
