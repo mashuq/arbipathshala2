@@ -152,8 +152,8 @@ module.exports = {
           {
             title: "كَلِمَة কালিমাহ (শব্দ)",
             collapsable: false,
-            path: "/guide/nahw/kalimah",
-            children: ["/guide/nahw/ism", "/guide/nahw/fel", "/guide/nahw/harf"],
+            path: "/guide/nahw/kalimah/",
+            children: ["/guide/nahw/kalimah/ism/", "/guide/nahw/kalimah/fel/", "/guide/nahw/kalimah/harf/"],
           },
         ],
       },
@@ -180,6 +180,11 @@ module.exports = {
   plugins: [
     "@vuepress/plugin-back-to-top",
     "@vuepress/plugin-medium-zoom",
+    [
+      'sitemap', {
+        hostname: 'https://arbipathshala.com/'
+      },
+    ],
     [
       "vuepress-plugin-container",
       {
@@ -242,6 +247,6 @@ module.exports = {
         type: "info",
         defaultTitle: "তথ্য",
       },
-    ],
+    ],    
   ],
 };
