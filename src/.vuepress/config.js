@@ -181,6 +181,11 @@ module.exports = {
     "@vuepress/plugin-back-to-top",
     "@vuepress/plugin-medium-zoom",
     [
+      'sitemap', {
+        hostname: 'https://arbipathshala.com/'
+      },
+    ],
+    [
       "vuepress-plugin-container",
       {
         type: "caution",
@@ -242,6 +247,6 @@ module.exports = {
         type: "info",
         defaultTitle: "তথ্য",
       },
-    ],
+    ],    
   ],
 };
