@@ -10,4 +10,5 @@
 - http://alquranervasha.com/
 - https://www.madinaharabic.com/
 - https://www.lqtoronto.com/
-
+- http://www.rememberarabic.com
+- https://ultimatearabic.com
