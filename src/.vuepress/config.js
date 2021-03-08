@@ -142,20 +142,40 @@ module.exports = {
     prevLinks: false,
     nav: [],
     sidebar: [
+      
       "/guide/",
       {
         title: "النَّحْو নাহু",
         path: "/guide/nahw/",
         collapsable: true,
         initialOpenGroupIndex: 0,
-        children: [
-          {
-            title: "كَلِمَة কালিমাহ (শব্দ)",
-            collapsable: false,
-            path: "/guide/nahw/kalimah/",
-            children: ["/guide/nahw/kalimah/ism/", "/guide/nahw/kalimah/fel/", "/guide/nahw/kalimah/harf/"],
-          },
-        ],
+        children: [{
+          title: "كَلِمَة কালিমাহ (শব্দ)",
+          collapsable: false,
+          path: "/guide/nahw/kalimah/",
+          children: [
+            {
+              title: "اسْم ইসম",
+              path: "/guide/nahw/kalimah/ism/",
+              collapsable: true,
+              initialOpenGroupIndex: 0,
+              children: [
+                {
+                  title: "جنس تذكير أو تأنيث বা লিঙ্গ",
+                  path: "/guide/nahw/kalimah/ism/tadhkir_taanis/",
+                  collapsable: true,
+                  initialOpenGroupIndex: 0,
+                  children: [
+                    "/guide/nahw/kalimah/ism/tadhkir_taanis/mudhakkar",
+                    "/guide/nahw/kalimah/ism/tadhkir_taanis/muannas"
+                  ],
+                },
+              ],
+            },
+            "/guide/nahw/kalimah/fel/",
+            "/guide/nahw/kalimah/harf/"
+          ],
+        }, ],
       },
       {
         title: "الصَّرْف সরফ",
@@ -171,7 +191,9 @@ module.exports = {
         initialOpenGroupIndex: 0,
         children: [],
       },
+      "/guide/reference",
     ],
+    
   },
 
   /**
@@ -247,6 +269,6 @@ module.exports = {
         type: "info",
         defaultTitle: "তথ্য",
       },
-    ],    
+    ],
   ],
 };
