@@ -65,8 +65,8 @@
 আরবীতে ইসম হয় নির্দিষ্ট হয় অথবা অনির্দিষ্ট। কোন জিনিসের আলোচনা পূর্বে হয়ে থাকলে সেটা নির্দিষ্ট আর না হয়ে থাকলে অনির্দিষ্ট।  
 অতএব বচন হিসেবে ইসম ২ ধরণের হতে পারে : 
 
-3.1  [نَكِرَة নাকিরা বা অনির্দিষ্ট](/guide/nahw/kalimah/ism/marifa_nakira/marifah)   
-3.2  [مَعْرِفَة মারিফা বা নির্দিষ্ট](/guide/nahw/kalimah/ism/marifa_nakira/nakirah)  
+3.1  [نَكِرَة নাকিরা বা অনির্দিষ্ট](/guide/nahw/kalimah/ism/marifa_nakira/nakirah)   
+3.2  [مَعْرِفَة মারিফা বা নির্দিষ্ট](/guide/nahw/kalimah/ism/marifa_nakira/marifah)  
 
 ::: common_example
 |নির্দিষ্টতা|আরবী|বাংলা|আরবী|বাংলা|আরবী|বাংলা|
