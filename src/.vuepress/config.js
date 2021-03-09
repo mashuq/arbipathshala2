@@ -170,6 +170,16 @@ module.exports = {
                     "/guide/nahw/kalimah/ism/tadhkir_taanis/muannas"
                   ],
                 },
+                {
+                  title: "النَّكِرَةُ أو الْمَعْرِفَةُ বা নির্দিষ্টতা",
+                  path: "/guide/nahw/kalimah/ism/marifa_nakira/",
+                  collapsable: true,
+                  initialOpenGroupIndex: 0,
+                  children: [
+                    "/guide/nahw/kalimah/ism/marifa_nakira/nakirah",
+                    "/guide/nahw/kalimah/ism/marifa_nakira/marifah"
+                  ],
+                },
               ],
             },
             "/guide/nahw/kalimah/fel/",
