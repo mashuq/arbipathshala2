@@ -152,38 +152,165 @@ module.exports = {
         children: [{
           title: "كَلِمَة কালিমাহ (শব্দ)",
           collapsable: false,
-          path: "/guide/nahw/kalimah/",
+          path: "/guide/nahw/kalimah",
           children: [
             {
               title: "اسْم ইসম",
-              path: "/guide/nahw/kalimah/ism/",
+              path: "/guide/nahw/ism",
               collapsable: true,
               initialOpenGroupIndex: 0,
               children: [
                 {
                   title: "جنس تذكير أو تأنيث বা লিঙ্গ",
-                  path: "/guide/nahw/kalimah/ism/tadhkir_taanis/",
+                  path: "/guide/nahw/tadhkir_taanis",
                   collapsable: true,
                   initialOpenGroupIndex: 0,
                   children: [
-                    "/guide/nahw/kalimah/ism/tadhkir_taanis/mudhakkar",
-                    "/guide/nahw/kalimah/ism/tadhkir_taanis/muannas"
+                    "/guide/nahw/mudhakkar",
+                    "/guide/nahw/muannas"
                   ],
                 },
                 {
                   title: "النَّكِرَةُ أو الْمَعْرِفَةُ বা নির্দিষ্টতা",
-                  path: "/guide/nahw/kalimah/ism/marifa_nakira/",
+                  path: "/guide/nahw/marifa_nakira",
                   collapsable: true,
                   initialOpenGroupIndex: 0,
                   children: [
-                    "/guide/nahw/kalimah/ism/marifa_nakira/nakirah",
-                    "/guide/nahw/kalimah/ism/marifa_nakira/marifah"
+                    "/guide/nahw/nakirah",
+                    "/guide/nahw/marifah"
+                  ],
+                },
+                {
+                  title: "عدد বচন",
+                  path: "/guide/nahw/adad",
+                  collapsable: true,
+                  initialOpenGroupIndex: 0,
+                  children: [
+                    "/guide/nahw/mufrad",
+                    "/guide/nahw/muthanna",
+                    "/guide/nahw/jame"
+                  ],
+                },
+                {
+                  title: "إعراب (إسم) ইরাব (ইসম) বা কারক",
+                  path: "/guide/nahw/ism_irab",
+                  collapsable: true,
+                  initialOpenGroupIndex: 0,
+                  children: [
+                    {
+                      title: "مَرْفُوع / رَفْع (إسم) রফা / মারফু (ইসম) বা কর্তৃকারক",
+                      path: "/guide/nahw/ism_marfu",
+                      collapsable: true,
+                      initialOpenGroupIndex: 0,
+                      children: [
+                        {
+                          title: "(إسم) علامات الرفع মারফু ইসমের আলামত সমূহ ",
+                          path: "/guide/nahw/ism_alamatul_rafa",
+                          collapsable: true,
+                          initialOpenGroupIndex: 0,
+                          children: [
+                            "/guide/nahw/alamatul_rafa_dammah",
+                            "/guide/nahw/alamatul_rafa_waw",
+                            "/guide/nahw/alamatul_rafa_alif",
+                            "/guide/nahw/alamatul_rafa_nun",
+                          ],
+                        },
+                        {
+                          title: "مرفوعات মারফু ইসম সমূহ",
+                          path: "/guide/nahw/marfuaat",
+                          collapsable: true,
+                          initialOpenGroupIndex: 0,
+                          children: [
+                            "/guide/nahw/fail",
+                            "/guide/nahw/naib_fail",
+                            "/guide/nahw/mubtada",
+                            "/guide/nahw/khabar",
+                            "/guide/nahw/ism_kaana_wa_akhawatiha",
+                            "/guide/nahw/khabar_inna_wa_akhawatiha",
+                            "/guide/nahw/ism_ma_la_mutashabihain_bi_laisa",
+                            "/guide/nahw/khabar_la_nafia_jins",
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      title: "(إسم) مَنصوب / نَصْب নসব / মানসুব  (ইসম) বা কর্মকারক",
+                      path: "/guide/nahw/ism_mansub",
+                      collapsable: true,
+                      initialOpenGroupIndex: 0,
+                      children: [
+                        {
+                          title: "(إسم) علامات النصب মানসুব  ইসমের আলামত সমূহ",
+                          path: "/guide/nahw/ism_alamatul_nasb",
+                          collapsable: true,
+                          initialOpenGroupIndex: 0,
+                          children: [
+                            "/guide/nahw/alamatul_nasb_fathah",
+                            "/guide/nahw/alamatul_nasb_ya",
+                            "/guide/nahw/alamatul_nasb_alif",
+                            "/guide/nahw/alamatul_nasb_kasrah",
+                            "/guide/nahw/alamatul_nasb_hadhf_nun",
+                          ],
+                        },
+                        {
+                          title: "منصوبات মানসুব  ইসম সমূহ ",
+                          path: "/guide/nahw/mansubaat",
+                          collapsable: true,
+                          initialOpenGroupIndex: 0,
+                          children: [
+                            "/guide/nahw/maful_bihi",
+                            "/guide/nahw/maful_mutlaq",
+                            "/guide/nahw/maful_fihi",
+                            "/guide/nahw/maful_lahu",
+                            "/guide/nahw/maful_maahu",
+                            "/guide/nahw/haal",
+                            "/guide/nahw/tamyiz",
+                            "/guide/nahw/mustathna",
+                            "/guide/nahw/khabar_kaana_wa_akhawatiha",
+                            "/guide/nahw/ism_inna_wa_akhawatiha",
+                            "/guide/nahw/ism_khabar_janna_wa_akhawatiha",
+                            "/guide/nahw/khabar_ma_la_mutashabihain_bi_laisa",
+                            "/guide/nahw/ism_la_nafia_jins",
+                            "/guide/nahw/munada",
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      title: "مخفوض / خَفْض / مَجرور / جَرّ জার / মাজরুর / খফদ / মাখফুদ (ইসম) বা করণকারক ",
+                      path: "/guide/nahw/ism_majrur",
+                      collapsable: true,
+                      initialOpenGroupIndex: 0,
+                      children: [
+                        {
+                          title: "(إسم) علامات الجرّ মাজরুর ইসমের আলামত সমূহ",
+                          path: "/guide/nahw/ism_alamatul_jarr",
+                          collapsable: true,
+                          initialOpenGroupIndex: 0,
+                          children: [
+                            "/guide/nahw/alamatul_jarr_fathah",
+                            "/guide/nahw/alamatul_jarr_ya",
+                            "/guide/nahw/alamatul_jarr_kasrah",
+                          ],
+                        },
+                        {
+                          title: "مجرورات মাজরুর ইসম সমূহ",
+                          path: "/guide/nahw/majruraat",
+                          collapsable: true,
+                          initialOpenGroupIndex: 0,
+                          children: [
+                            "/guide/nahw/majrur",
+                            "/guide/nahw/mudaf_ilaihi",
+                          ],
+                        },
+                      ],
+                    },
                   ],
                 },
               ],
             },
-            "/guide/nahw/kalimah/fel/",
-            "/guide/nahw/kalimah/harf/"
+            "/guide/nahw/fel",
+            "/guide/nahw/harf"
           ],
         }, ],
       },
